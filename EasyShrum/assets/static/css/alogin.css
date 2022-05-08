@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+#card {
+	color: #fff;
+  margin: 0 auto;
+  width: 900px;
+  padding: 20px 35px;
+  background: #2e14a4;
+  border-radius: 20px;
+  margin: 15px;
+  text-align: center;
+}

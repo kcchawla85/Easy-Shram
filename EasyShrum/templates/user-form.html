@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>User Login</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/user-form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+       background-color: rgb(143, 150, 147);
+    }
+ </style>
+</head>
+<body>
+<div id="card" class="mx-auto">
+<div class="container mt-3">
+    <br>
+  <h2 style="color: chartreuse;">EMPLOYMENT REGISTRATION</h2>
+</br>
+  <form method="post">
+    {% csrf_token %}
+ 
+    <div class="row mb-3">
+      <div class="col">
+        <label for="employee">Choose your profile for the job:</label>
+      </div>
+      <div class="col">
+        <tr>
+
+            <td>
+              <select id="employee" class="form-select" name="category">
+              
+                <option value="Labour">Labour</option>
+                <option value="Construction-worker">Construction worker</option>
+                <option value="Gardener">Gardener</option>
+                <option value="Road-Construction">Road Construction</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Sewer-Cleaner">Sewer Cleaner</option>
+                <option value="Sweeper">Sweeper</option>
+                <option value="Driver">Driver</option>
+                <option value="Newspaper-Vendor">Newspaper Vendor</option>
+                <option value="Bouncers">Bouncers</option>
+                <option value="Daily-Workers">Daily Workers</option>
+                <option value="Field-Incharge">Field Incharge</option>
+                <option value="Farm">Farm </option>
+                <option value="Security-Guards">Security Guards</option>
+                
+                </select>
+             
+            </td>
+            </tr>
+      </div>
+    </div>    
+    
+        
+    <div class="row mb-3">
+      <div class="col">
+        <label for="employee">Enter Your Date of Birth:</label>
+      </div>
+      <div class="col">
+        <tr>
+             
+            <td class="d-flex justify-content-evenly">
+            <select name="Birthday_day" class="col-3" id="Birthday_Day">
+            <option value="-1">Day:</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+             
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+             
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+             
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+             
+            <option value="31">31</option>
+            </select>
+             
+            <select id="Birthday_Month" class="col-3" name="Birthday_Month">
+            <option value="-1">Month:</option>
+            <option value="January">Jan</option>
+            <option value="February">Feb</option>
+            <option value="March">Mar</option>
+            <option value="April">Apr</option>
+            <option value="May">May</option>
+            <option value="June">Jun</option>
+            <option value="July">Jul</option>
+            <option value="August">Aug</option>
+            <option value="September">Sep</option>
+            <option value="October">Oct</option>
+            <option value="November">Nov</option>
+            <option value="December">Dec</option>
+            </select>
+             
+            <select name="Birthday_Year" class="col-3" id="Birthday_Year">
+             
+            <option value="-1">Year:</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+             
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+             
+            <option value="1989">1989</option>
+            <option value="1988">1988</option>
+            <option value="1987">1987</option>
+            <option value="1986">1986</option>
+            <option value="1985">1985</option>
+            <option value="1984">1984</option>
+            <option value="1983">1983</option>
+            <option value="1982">1982</option>
+            <option value="1981">1981</option>
+            <option value="1980">1980</option>
+            </select>
+            </td>
+            </tr>
+      </div>
+    </div>
+
+
+    <div class="row mb-3">
+      <div class="col">
+        <label for="Gender">Enter Your Gender:</label>
+      </div>
+
+      <div class="col">
+        <td>
+            Male <input type="radio" name="Gender" value="Male" />
+            Female <input type="radio" name="Gender" value="Female" />
+        </td>
+      </div>
+    </div>
+
+    
+    <div class="row mb-3">
+      <div class="col">
+        <label for="Address">Enter Your State:</label> 
+      </div>
+      <div class="col">
+        <td>
+          <input type="text" class="form-control" id="state" placeholder="Enter your State" name="state">
+        </td>
+      </div>
+
+    </div>
+
+
+    <div class="row mb-3">
+        <div class="col">
+          <label for="pincode">Enter Your Pincode:</label>
+        </div>
+  
+        <div class="col">
+            <input type="text" class="form-control" id="Pincode" placeholder="Enter your pincode" name="pincode">
+        </div>
+      </div>
+      
+      
+      <div class="row mb-3">
+        <div class="col">
+          <label for="Experience">Enter Your Job Experience:</label>
+        </div>
+  
+        <div class="col">
+            <input type="text" class="form-control" id="Pincode" placeholder=" Enter your Job Experience (in years)" name="Experience">
+        </div>
+      </div>
+
+
+
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+</div>
+
+</body>
+</html>

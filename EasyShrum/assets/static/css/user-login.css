@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #000 !important;
+	font-family: 'Josefin Sans', sans-serif;
+    color: #fff !important;
+}
+body {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+nav {
+    text-align: center;
+}
+nav img{
+    width: 30%;
+}
